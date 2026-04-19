@@ -1,0 +1,97 @@
+<!-- Video Hero Section with "Woah Factor" -->
+<!-- Copy this into your hero section and customize the content -->
+
+<section class="hero hero-video">
+  <!-- Background Video (optional) -->
+  <div class="hero-video-background">
+    <video autoplay muted loop playsinline class="background-video">
+      <source src="path/to-your-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="video-overlay"></div>
+  </div>
+
+  <!-- Particle/Animation Overlay (alternative to video) -->
+  <div class="hero-particles" id="heroParticles">
+    <span class="particle" style="--delay: 0s; --x: 10%; --y: 80%;"></span>
+    <span class="particle" style="--delay: 2s; --x: 85%; --y: 75%;"></span>
+    <span class="particle" style="--delay: 4s; --x: 30%; --y: 85%;"></span>
+    <span class="particle" style="--delay: 1s; --x: 70%; --y: 20%;"></span>
+    <span class="particle" style="--delay: 3s; --x: 45%; --y: 60%;"></span>
+  </div>
+
+  <!-- Hero Content -->
+  <div class="hero-content">
+    <span class="hero-subtitle reveal-text">Welcome to [Business Name]</span>
+    <h1 class="hero-title">
+      <span class="word-reveal">Clear</span>
+      <span class="word-reveal">Headline</span>
+      <span class="word-reveal">That Sells</span>
+    </h1>
+    <p class="hero-description reveal-text">
+      Address the customer's pain point or desire. Make them feel understood immediately.
+    </p>
+    <div class="hero-buttons reveal-text">
+      <a href="#contact" class="btn btn-primary">Primary CTA - Get Started</a>
+      <a href="#services" class="btn btn-secondary">Learn More</a>
+    </div>
+  </div>
+
+  <!-- Scroll Indicator -->
+  <div class="scroll-indicator">
+    <span>Scroll to explore</span>
+    <div class="scroll-arrow">↓</div>
+  </div>
+</section>
+
+<!-- CSS Classes Used: -->
+<!-- .hero - Main hero container -->
+<!-- .hero-video - Video hero variant -->
+<!-- .hero-video-background - Video background wrapper -->
+<!-- .background-video - The actual video element -->
+<!-- .video-overlay - Dark overlay for text readability -->
+<!-- .hero-particles - Particle animation container -->
+<!-- .particle - Individual floating particle -->
+<!-- .hero-content - Main content wrapper -->
+<!-- .hero-subtitle - Small text above title -->
+<!-- .hero-title - Main headline with word reveals -->
+<!-- .word-reveal - Animates each word individually -->
+<!-- .hero-description - Subheadline/pitch -->
+<!-- .hero-buttons - CTA button container -->
+<!-- .scroll-indicator - Animated scroll prompt at bottom -->
+
+<!-- JavaScript to Add (in main.js or inline script): -->
+/*
+// Particle Animation
+function initHeroParticles() {
+  const particles = document.querySelectorAll('.particle');
+  particles.forEach(particle => {
+    particle.style.animation = `float 4s ease-in-out infinite`;
+    particle.style.animationDelay = particle.style.getPropertyValue('--delay');
+  });
+}
+
+// Word Reveal Animation
+function initWordReveal() {
+  const words = document.querySelectorAll('.word-reveal');
+  words.forEach(word => {
+    word.style.opacity = '0';
+    word.style.transform = 'translateY(20px)';
+  });
+
+  setTimeout(() => {
+    words.forEach((word, index) => {
+      setTimeout(() => {
+        word.style.opacity = '1';
+        word.style.transform = 'translateY(0)';
+      }, index * 150);
+    });
+  }, 500);
+}
+
+// Call on page load
+window.addEventListener('load', () => {
+  initHeroParticles();
+  initWordReveal();
+});
+*/

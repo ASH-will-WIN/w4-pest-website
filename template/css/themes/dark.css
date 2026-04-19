@@ -1,0 +1,130 @@
+/* ========================================
+   DARK THEME
+   Black, gold, deep colors - Perfect for bars, nightlife, luxury
+   ======================================== */
+
+:root {
+  /* Primary Colors */
+  --primary-color: #1a1a1a;        /* Near black */
+  --secondary-color: #2d2d2d;      /* Dark gray */
+  --accent-color: #D4AF37;         /* Gold */
+
+  /* Text Colors */
+  --text-dark: #FAFAFA;            /* Nearly white */
+  --text-light: #CCCCCC;           /* Light gray */
+
+  /* Background Colors */
+  --bg-light: #121212;             /* Very dark */
+  --bg-dark: #0a0a0a;              /* Almost black */
+
+  /* Gradient backgrounds */
+  --gradient-primary: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  --gradient-accent: linear-gradient(135deg, #D4AF37 0%, #F4C430 100%);
+  --gradient-hero: linear-gradient(135deg, rgba(10, 10, 10, 0.98) 0%, rgba(212, 175, 55, 0.2) 100%);
+}
+
+/* Theme-specific styling */
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+.hero {
+  background: var(--gradient-hero);
+}
+
+.hero-title {
+  color: var(--text-dark);
+}
+
+.btn-primary {
+  background: var(--gradient-accent);
+  border: 2px solid var(--accent-color);
+  color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background: transparent;
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid var(--text-dark);
+  color: var(--text-dark);
+}
+
+.btn-secondary:hover {
+  background: var(--text-dark);
+  color: var(--bg-dark);
+}
+
+.section-title {
+  color: var(--text-dark);
+}
+
+.section-icon {
+  color: var(--accent-color);
+}
+
+.service-card,
+.pricing-card,
+.menu-item {
+  background: var(--secondary-color);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.service-card:hover,
+.pricing-card:hover,
+.menu-item:hover {
+  border-color: var(--accent-color);
+  box-shadow: 0 15px 40px rgba(212, 175, 55, 0.2);
+  transform: translateY(-8px);
+}
+
+.quote-icon {
+  color: var(--accent-color);
+}
+
+.premium-badge,
+.popular-badge {
+  background: var(--gradient-accent);
+  color: var(--primary-color);
+}
+
+footer {
+  background: var(--bg-dark);
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+  color: var(--text-light);
+}
+
+/* Special dark theme accents */
+.highlight {
+  color: var(--accent-color);
+}
+
+.particle {
+  background: var(--accent-color);
+}
+
+.testimonial-card {
+  background: var(--secondary-color);
+}
+
+nav {
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+/* Gold divider lines */
+hr {
+  border-color: rgba(212, 175, 55, 0.3);
+}
+
+/* Logo glow effect */
+.logo {
+  text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+}

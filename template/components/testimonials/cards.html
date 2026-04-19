@@ -1,0 +1,163 @@
+<!-- Testimonials Cards Component -->
+<!-- Display customer reviews in attractive cards -->
+
+<section class="testimonials-section" id="testimonials">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="section-header reveal-up">
+      <span class="subtitle">What Our Customers Say</span>
+      <h2><span class="section-icon">⭐</span> Happy Customers</h2>
+      <p class="section-description">
+        Don't just take our word for it. Here's what real customers have to say.
+      </p>
+    </div>
+
+    <!-- Testimonials Grid -->
+    <div class="testimonials-grid">
+      <!-- Testimonial 1 -->
+      <div class="testimonial-card reveal-scale">
+        <div class="quote-icon">"</div>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <p>"Excellent service! They arrived on time and completed the job faster than expected. The team was professional and the results exceeded our expectations."</p>
+        <div class="testimonial-author">
+          <div class="author-info">
+            <span class="name">Sarah Johnson</span>
+            <span class="location">Homeowner, Troy, MI</span>
+          </div>
+          <div class="author-avatar">SJ</div>
+        </div>
+        <div class="verified-badge">✓ Verified Customer</div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="testimonial-card reveal-scale">
+        <div class="quote-icon">"</div>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <p>"I've used several services in the past, but [Business Name] is by far the best. They're reliable, fair-priced, and truly care about their customers."</p>
+        <div class="testimonial-author">
+          <div class="author-info">
+            <span class="name">Mike Thompson</span>
+            <span class="location">Business Owner, Rochester, MI</span>
+          </div>
+          <div class="author-avatar">MT</div>
+        </div>
+        <div class="verified-badge">✓ Verified Customer</div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="testimonial-card reveal-scale">
+        <div class="quote-icon">"</div>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <p>"Outstanding work! The team was professional, courteous, and left everything spotless. I wouldn't hesitate to recommend them to anyone."</p>
+        <div class="testimonial-author">
+          <div class="author-info">
+            <span class="name">Lisa Garcia</span>
+            <span class="location">Homeowner, Bloomfield, MI</span>
+          </div>
+          <div class="author-avatar">LG</div>
+        </div>
+        <div class="verified-badge">✓ Verified Customer</div>
+      </div>
+
+      <!-- Testimonial 4 -->
+      <div class="testimonial-card reveal-scale">
+        <div class="quote-icon">"</div>
+        <div class="rating">⭐⭐⭐⭐⭐</div>
+        <p>"From start to finish, the experience was seamless. They listened to our needs and delivered exactly what we asked for. Highly recommend!"</p>
+        <div class="testimonial-author">
+          <div class="author-info">
+            <span class="name">David Chen</span>
+            <span class="location">Property Manager, Southfield, MI</span>
+          </div>
+          <div class="author-avatar">DC</div>
+        </div>
+        <div class="verified-badge">✓ Verified Customer</div>
+      </div>
+    </div>
+
+    <!-- Trust Badges -->
+    <div class="trust-logos reveal-up">
+      <p>Trusted by 500+ happy customers</p>
+      <div class="trust-badges">
+        <span class="badge">⭐ 5-Star Rated</span>
+        <span class="badge">✓ Licensed & Insured</span>
+        <span class="badge">🏆 Award Winning</span>
+        <span class="badge">✅ Satisfaction Guaranteed</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Alternative: Testimonial Slider (simpler, fewer dependencies) -->
+
+<section class="testimonials-section testimonials-slider">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <h2><span class="section-icon">💬</span> What People Say</h2>
+    </div>
+
+    <div class="testimonial-slider-wrapper">
+      <div class="testimonial-slide reveal-up">
+        <div class="quote-icon">"</div>
+        <p>"Amazing service! They transformed our space exactly as we envisioned. Can't recommend them enough!"</p>
+        <div class="testimonial-footer">
+          <span class="name">- Jennifer M.</span>
+          <div class="rating">⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Setup Instructions: -->
+<!-- 1. Replace testimonial text with REAL customer quotes -->
+<!-- 2. Use actual customer names (with permission) or initials -->
+<!-- 3. Include location for credibility -->
+<!-- 4. Add verified badges when possible -->
+<!-- 5. Star ratings should be accurate -->
+<!-- 6. Consider adding photos (with permission) -->
+
+<!-- CSS Classes Used: -->
+<!-- .testimonials-section - Main section -->
+<!-- .testimonials-grid - Grid layout for cards -->
+<!-- .testimonial-card - Individual testimonial -->
+<!-- .quote-icon - Large quote decoration -->
+<!-- .rating - Star rating display -->
+<!-- .testimonial-author - Author info container -->
+<!-- .author-info - Name and location -->
+<!-- .author-avatar - Initials or photo -->
+<!-- .verified-badge - Verification indicator -->
+<!-- .trust-logos - Trust badges section -->
+<!-- .trust-badges - Badge grid -->
+<!-- .testimonial-slider-wrapper - Slider container -->
+<!-- .testimonial-slide - Individual slide -->
+
+<!-- JavaScript for Simple Auto-Sliding (optional): -->
+/*
+function initTestimonialSlider() {
+  const slides = document.querySelectorAll('.testimonial-slide');
+  let currentIndex = 0;
+
+  if (slides.length <= 1) return;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.style.display = i === index ? 'block' : 'none';
+    });
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+  }
+
+  // Show first slide
+  showSlide(0);
+
+  // Auto-advance every 5 seconds
+  setInterval(nextSlide, 5000);
+}
+
+// Call on page load
+document.addEventListener('DOMContentLoaded', initTestimonialSlider);
+*/

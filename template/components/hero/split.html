@@ -1,0 +1,112 @@
+<!-- Split Hero Section -->
+<!-- Half image/visual, half text - great for service businesses -->
+
+<section class="hero hero-split">
+  <div class="hero-split-container">
+    <!-- Left Side - Text Content -->
+    <div class="hero-split-text reveal-left">
+      <span class="hero-subtitle">[Business Name]</span>
+      <h1 class="hero-title">
+        [Compelling Headline That Addresses Pain Point]
+      </h1>
+      <p class="hero-description">
+        [Brief description of what you do and why customers should care]
+      </p>
+      <div class="hero-features">
+        <div class="feature-item">
+          <span class="check-icon">✓</span>
+          <span>[Key benefit or feature]</span>
+        </div>
+        <div class="feature-item">
+          <span class="check-icon">✓</span>
+          <span>[Another key benefit]</span>
+        </div>
+        <div class="feature-item">
+          <span class="check-icon">✓</span>
+          <span>[Third key benefit]</span>
+        </div>
+      </div>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">Get Free Quote</a>
+        <a href="#services" class="btn btn-secondary">View Services</a>
+      </div>
+    </div>
+
+    <!-- Right Side - Image/Visual -->
+    <div class="hero-split-image reveal-right">
+      <div class="image-frame">
+        <img src="path/to-your-image.jpg" alt="[Business description]">
+        <div class="image-accent"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional Stat Counters at Bottom -->
+  <div class="hero-stats reveal-up">
+    <div class="stat-item">
+      <span class="stat-number" data-target="15">0</span>
+      <span class="stat-label">Years Experience</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number" data-target="500">0</span>
+      <span class="stat-label">Happy Customers</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number" data-target="100">0</span>
+      <span class="stat-label">% Satisfaction</span>
+    </div>
+  </div>
+</section>
+
+<!-- CSS Classes Used: -->
+<!-- .hero-split - Split hero container -->
+<!-- .hero-split-container - Flex/Grid wrapper -->
+<!-- .hero-split-text - Left side text content -->
+<!-- .hero-split-image - Right side image -->
+<!-- .image-frame - Image with decorative frame -->
+<!-- .image-accent - Decorative accent element -->
+<!-- .hero-features - Feature list container -->
+<!-- .feature-item - Individual feature with icon -->
+<!-- .check-icon - Checkmark icon -->
+<!-- .hero-stats - Bottom stat counters -->
+<!-- .stat-item - Individual stat -->
+<!-- .stat-number - Animated number -->
+<!-- .stat-label - Stat description -->
+
+<!-- JavaScript for Counter Animation (add to main.js): -->
+/*
+function initCounterAnimation() {
+  const counters = document.querySelectorAll('.stat-number');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const target = parseInt(entry.target.dataset.target);
+        animateCounter(entry.target, 0, target, 2000);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  counters.forEach(counter => observer.observe(counter));
+}
+
+function animateCounter(element, start, end, duration) {
+  const range = end - start;
+  const increment = range / (duration / 16);
+  let current = start;
+
+  const timer = setInterval(() => {
+    current += increment;
+    if (current >= end) {
+      element.textContent = end;
+      clearInterval(timer);
+    } else {
+      element.textContent = Math.floor(current);
+    }
+  }, 16);
+}
+
+// Call on page load
+window.addEventListener('load', initCounterAnimation);
+*/

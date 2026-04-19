@@ -1,0 +1,173 @@
+<!-- Contact Section with Form and Map -->
+<!-- Complete contact component with form, info, and embedded map -->
+
+<section class="contact-section" id="contact">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="section-header reveal-up">
+      <span class="subtitle">Get In Touch</span>
+      <h2><span class="section-icon">📍</span> Contact Us</h2>
+      <p class="section-description">
+        Ready to [take next step]? We'd love to hear from you.
+      </p>
+    </div>
+
+    <div class="contact-layout">
+      <!-- Contact Form -->
+      <div class="contact-form-wrapper reveal-left">
+        <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+          <div class="form-group">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required placeholder="Your full name">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="service">Service Interested In</label>
+            <select id="service" name="service">
+              <option value="">Select a service...</option>
+              <option value="service1">Service One</option>
+              <option value="service2">Service Two</option>
+              <option value="service3">Service Three</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="5" required placeholder="How can we help you?"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-info-wrapper reveal-right">
+        <div class="contact-info-card">
+          <h3>Contact Information</h3>
+
+          <div class="contact-method">
+            <div class="contact-icon">📞</div>
+            <div class="contact-details">
+              <h4>Phone</h4>
+              <p><a href="tel:5555555555">(555) 555-5555</a></p>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="contact-icon">📧</div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <p><a href="mailto:info@business.com">info@business.com</a></p>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="contact-icon">📍</div>
+            <div class="contact-details">
+              <h4>Address</h4>
+              <p>123 Business Street<br>City, State 12345</p>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="contact-icon">🕒</div>
+            <div class="contact-details">
+              <h4>Hours</h4>
+              <p>Mon - Fri: 9:00 AM - 6:00 PM<br>Sat: 10:00 AM - 4:00 PM<br>Sun: Closed</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div class="map-wrapper reveal-up">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=! INSERT_YOUR_MAP_EMBED_CODE"
+            width="100%"
+            height="250"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <!-- Trust Indicators -->
+        <div class="trust-indicators reveal-up">
+          <div class="trust-item">
+            <span class="trust-icon">✓</span>
+            <span>Licensed & Insured</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">✓</span>
+            <span>Free Estimates</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">✓</span>
+            <span>Same-Day Service</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Alternative: Simple Contact CTA (for footer/end of pages) -->
+
+<section class="contact-cta reveal-up">
+  <h2>Ready to [Take Action]?</h2>
+  <p>Contact us today and let's [achieve goal together].</p>
+  <div class="contact-info">
+    <div class="contact-method">
+      <span class="contact-icon">📞</span>
+      <h3>Call Us</h3>
+      <p><a href="tel:5555555555">(555) 555-5555</a></p>
+    </div>
+    <div class="contact-method">
+      <span class="contact-icon">📧</span>
+      <h3>Email</h3>
+      <p><a href="mailto:info@business.com">info@business.com</a></p>
+    </div>
+  </div>
+  <a href="mailto:info@business.com" class="btn btn-primary">Get in Touch</a>
+</section>
+
+<!-- Setup Instructions: -->
+<!-- 1. Formspree Setup: -->
+<!--    - Go to https://formspree.io and create free account -->
+<!--    - Create new form, get your unique URL -->
+<!--    - Replace "your-form-id" in action attribute -->
+<!-- 2. Google Maps: -->
+<!--    - Go to Google Maps, find your business location -->
+<!--    - Click "Share" → "Embed a map" -->
+<!--    - Copy the HTML, replace the iframe src -->
+<!-- 3. Update all contact info (phone, email, address, hours) -->
+<!-- 4. Add your actual service options to the dropdown -->
+
+<!-- CSS Classes Used: -->
+<!-- .contact-section - Main section -->
+<!-- .contact-layout - Two-column grid layout -->
+<!-- .contact-form-wrapper - Form container -->
+<!-- .contact-form - The actual form -->
+<!-- .form-group - Individual form field -->
+<!-- .form-row - Row with multiple fields -->
+<!-- .contact-info-wrapper - Info + map container -->
+<!-- .contact-info-card - Info card -->
+<!-- .contact-method - Individual contact method -->
+<!-- .contact-icon - Icon for method -->
+<!-- .contact-details - Text details -->
+<!-- .map-wrapper - Google Maps embed -->
+<!-- .trust-indicators - Trust badges -->
+<!-- .trust-item - Individual trust indicator -->
+<!-- .contact-cta - Simple CTA variant -->

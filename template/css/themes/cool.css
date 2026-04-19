@@ -1,0 +1,89 @@
+/* ========================================
+   COOL THEME
+   Blues, teals, grays - Perfect for service businesses
+   ======================================== */
+
+:root {
+  /* Primary Colors */
+  --primary-color: #0077B6;        /* Ocean blue */
+  --secondary-color: #00B4D8;      /* Sky blue */
+  --accent-color: #90E0EF;         /* Light blue */
+
+  /* Text Colors */
+  --text-dark: #1D3557;            /* Navy */
+  --text-light: #F8F9FA;           /* Off-white */
+
+  /* Background Colors */
+  --bg-light: #EDF6F9;             /* Light blue-gray */
+  --bg-dark: #023E8A;              /* Deep blue */
+
+  /* Gradient backgrounds */
+  --gradient-primary: linear-gradient(135deg, #0077B6 0%, #00B4D8 100%);
+  --gradient-accent: linear-gradient(135deg, #90E0EF 0%, #48CAE4 100%);
+  --gradient-hero: linear-gradient(135deg, rgba(29, 53, 87, 0.95) 0%, rgba(0, 119, 182, 0.8) 100%);
+}
+
+/* Theme-specific styling */
+.hero {
+  background: var(--gradient-hero);
+}
+
+.btn-primary {
+  background: var(--gradient-primary);
+  border: 2px solid var(--primary-color);
+}
+
+.btn-primary:hover {
+  background: var(--gradient-accent);
+  border-color: var(--accent-color);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 119, 182, 0.3);
+}
+
+.section-title {
+  color: var(--text-dark);
+}
+
+.section-icon {
+  color: var(--primary-color);
+}
+
+.service-card,
+.pricing-card,
+.testimonial-card {
+  border: 1px solid rgba(0, 119, 182, 0.1);
+}
+
+.service-card:hover,
+.pricing-card:hover,
+.testimonial-card:hover {
+  border-color: var(--secondary-color);
+  box-shadow: 0 15px 40px rgba(0, 119, 182, 0.15);
+}
+
+.quote-icon {
+  color: var(--primary-color);
+}
+
+.premium-badge,
+.popular-badge {
+  background: var(--gradient-primary);
+  color: white;
+}
+
+footer {
+  background: var(--text-dark);
+  color: var(--text-light);
+}
+
+/* Trust indicators */
+.trust-indicators {
+  border-color: var(--primary-color);
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(0, 119, 182, 0.1);
+}

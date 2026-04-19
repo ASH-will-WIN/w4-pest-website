@@ -1,0 +1,153 @@
+/* ========================================
+   VIBRANT THEME
+   Bright, colorful - Perfect for retail, creative businesses
+   ======================================== */
+
+:root {
+  /* Primary Colors */
+  --primary-color: #FF6B6B;        /* Coral red */
+  --secondary-color: #4ECDC4;      /* Teal */
+  --accent-color: #FFE66D;         /* Bright yellow */
+
+  /* Additional vibrant colors */
+  --color-purple: #A78BFA;         /* Soft purple */
+  --color-pink: #F472B6;           /* Playful pink */
+
+  /* Text Colors */
+  --text-dark: #1F2937;            /* Dark gray */
+  --text-light: #FFFFFF;           /* White */
+
+  /* Background Colors */
+  --bg-light: #FEF3C7;             /* Soft yellow tint */
+  --bg-dark: #1F2937;              /* Dark gray */
+
+  /* Gradient backgrounds */
+  --gradient-primary: linear-gradient(135deg, #FF6B6B 0%, #F472B6 100%);
+  --gradient-accent: linear-gradient(135deg, #FFE66D 0%, #FBBF24 100%);
+  --gradient-hero: linear-gradient(135deg, rgba(31, 41, 55, 0.9) 0%, rgba(255, 107, 107, 0.7) 100%);
+}
+
+/* Theme-specific styling */
+.hero {
+  background: var(--gradient-hero);
+}
+
+.btn-primary {
+  background: var(--gradient-primary);
+  border: 2px solid var(--primary-color);
+}
+
+.btn-primary:hover {
+  background: var(--gradient-accent);
+  border-color: var(--accent-color);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(255, 107, 107, 0.3);
+}
+
+.btn-secondary {
+  background: white;
+  border: 2px solid var(--text-dark);
+  color: var(--text-dark);
+}
+
+.btn-secondary:hover {
+  background: var(--text-dark);
+  color: white;
+  transform: translateY(-3px);
+}
+
+.section-title {
+  color: var(--text-dark);
+}
+
+.section-icon {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.service-card,
+.pricing-card,
+.product-card {
+  border: none;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.service-card:hover,
+.pricing-card:hover,
+.product-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 50px rgba(255, 107, 107, 0.2);
+}
+
+/* Colorful price tags */
+.price {
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+.premium-badge,
+.popular-badge {
+  background: var(--gradient-primary);
+  color: white;
+}
+
+/* Vibrant accent elements */
+.quote-icon {
+  color: var(--secondary-color);
+  opacity: 0.3;
+}
+
+.testimonial-card {
+  background: white;
+  border-left: 4px solid var(--secondary-color);
+}
+
+/* Colorful borders on focus */
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 4px rgba(255, 107, 107, 0.1);
+}
+
+/* Rainbow gradient accents */
+.stagger-item:nth-child(1) { border-top: 3px solid var(--primary-color); }
+.stagger-item:nth-child(2) { border-top: 3px solid var(--secondary-color); }
+.stagger-item:nth-child(3) { border-top: 3px solid var(--accent-color); }
+.stagger-item:nth-child(4) { border-top: 3px solid var(--color-purple); }
+.stagger-item:nth-child(5) { border-top: 3px solid var(--color-pink); }
+
+/* Gallery hover effects */
+.gallery-item:hover .gallery-overlay {
+  background: linear-gradient(135deg, rgba(255, 107, 107, 0.8), rgba(244, 114, 182, 0.8));
+}
+
+footer {
+  background: var(--gradient-primary);
+  color: white;
+}
+
+/* Fun animations */
+.product-card .price-tag {
+  position: relative;
+}
+
+.product-card .price-tag::after {
+  content: 'NEW';
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: var(--gradient-accent);
+  color: var(--text-dark);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  animation: bounce 2s infinite;
+}

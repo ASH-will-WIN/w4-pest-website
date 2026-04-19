@@ -1,0 +1,218 @@
+<!-- Gallery Component - Grid Layout -->
+<!-- Perfect for food photography, before/after, portfolio, etc. -->
+
+<section class="gallery-section" id="gallery">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="section-header reveal-up">
+      <span class="subtitle">Our Work</span>
+      <h2><span class="section-icon">📸</span> Photo Gallery</h2>
+      <p class="section-description">
+        [Brief description - food we serve, projects we've completed, etc.]
+      </p>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="gallery-grid">
+      <!-- Gallery Item 1 -->
+      <div class="gallery-item reveal-scale">
+        <div class="gallery-image">
+          <img src="image1.jpg" alt="Description of image">
+          <div class="gallery-overlay">
+            <span class="gallery-caption">Image Caption</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery Item 2 -->
+      <div class="gallery-item reveal-scale">
+        <div class="gallery-image">
+          <img src="image2.jpg" alt="Description of image">
+          <div class="gallery-overlay">
+            <span class="gallery-caption">Image Caption</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery Item 3 -->
+      <div class="gallery-item reveal-scale">
+        <div class="gallery-image">
+          <img src="image3.jpg" alt="Description of image">
+          <div class="gallery-overlay">
+            <span class="gallery-caption">Image Caption</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery Item 4 -->
+      <div class="gallery-item reveal-scale">
+        <div class="gallery-image">
+          <img src="image4.jpg" alt="Description of image">
+          <div class="gallery-overlay">
+            <span class="gallery-caption">Image Caption</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery Item 5 -->
+      <div class="gallery-item reveal-scale">
+        <div class="gallery-image">
+          <img src="image5.jpg" alt="Description of image">
+          <div class="gallery-overlay">
+            <span class="gallery-caption">Image Caption</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery Item 6 -->
+      <div class="gallery-item reveal-scale">
+        <div class="gallery-image">
+          <img src="image6.jpg" alt="Description of image">
+          <div class="gallery-overlay">
+            <span class="gallery-caption">Image Caption</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- View More Button (optional) -->
+    <div class="gallery-cta reveal-up">
+      <a href="#" class="btn btn-secondary">View More Photos</a>
+    </div>
+  </div>
+</section>
+
+<!-- Alternative: Masonry Layout (Pinterest-style) -->
+
+<section class="gallery-section gallery-masonry">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <h2><span class="section-icon">🎨</span> Our Portfolio</h2>
+    </div>
+
+    <div class="gallery-masonry-grid">
+      <div class="gallery-item gallery-item-tall">
+        <img src="tall-image1.jpg" alt="Description">
+      </div>
+      <div class="gallery-item">
+        <img src="image2.jpg" alt="Description">
+      </div>
+      <div class="gallery-item">
+        <img src="image3.jpg" alt="Description">
+      </div>
+      <div class="gallery-item gallery-item-wide">
+        <img src="wide-image.jpg" alt="Description">
+      </div>
+      <div class="gallery-item">
+        <img src="image5.jpg" alt="Description">
+      </div>
+      <div class="gallery-item">
+        <img src="image6.jpg" alt="Description">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Alternative: Menu-Style Gallery (for restaurants) -->
+
+<section class="gallery-section gallery-menu">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <span class="subtitle">Our Dishes</span>
+      <h2><span class="section-icon">🍽️</span> Menu Highlights</h2>
+    </div>
+
+    <div class="menu-gallery-grid">
+      <div class="menu-item reveal-scale">
+        <div class="menu-image">
+          <img src="dish1.jpg" alt="Taco al Pastor">
+        </div>
+        <div class="menu-info">
+          <h3>Taco al Pastor</h3>
+          <p>Marinated pork, pineapple, cilantro</p>
+          <span class="menu-price">$6</span>
+        </div>
+      </div>
+
+      <div class="menu-item reveal-scale">
+        <div class="menu-image">
+          <img src="dish2.jpg" alt="Mole Negro">
+        </div>
+        <div class="menu-info">
+          <h3>Mole Negro</h3>
+          <p>Traditional Oaxacan black mole</p>
+          <span class="menu-price">$18</span>
+        </div>
+      </div>
+
+      <div class="menu-item reveal-scale">
+        <div class="menu-image">
+          <img src="dish3.jpg" alt="Enchiladas">
+        </div>
+        <div class="menu-info">
+          <h3>Enchiladas Verdes</h3>
+          <p>Green tomatillo sauce, cheese</p>
+          <span class="menu-price">$12</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Setup Instructions: -->
+<!-- 1. Image sizing recommendations: -->
+<!--    - Gallery images: 800x600px, under 200KB -->
+<!--    - Hero images: 1920x1080px, under 300KB -->
+<!--    - Use WebP format when possible -->
+<!-- 2. Always include alt text for accessibility -->
+<!-- 3. Compress images before upload (use tinypng.com) -->
+<!-- 4. Consider lazy loading for large galleries -->
+
+<!-- CSS Classes Used: -->
+<!-- .gallery-section - Main section -->
+<!-- .gallery-grid - Grid layout -->
+<!-- .gallery-item - Individual item -->
+<!-- .gallery-image - Image container -->
+<!-- .gallery-overlay - Hover overlay -->
+<!-- .gallery-caption - Caption text -->
+<!-- .gallery-cta - View more button -->
+<!-- .gallery-masonry-grid - Masonry layout -->
+<!-- .gallery-item-tall - Tall item for masonry -->
+<!-- .gallery-item-wide - Wide item for masonry -->
+<!-- .menu-gallery-grid - Menu-style grid -->
+<!-- .menu-item - Menu item with price -->
+<!-- .menu-info - Menu item details -->
+<!-- .menu-price - Price display -->
+
+<!-- JavaScript for Lightbox (optional simple version): -->
+/*
+function initGalleryLightbox() {
+  const galleryItems = document.querySelectorAll('.gallery-item');
+  const lightbox = document.createElement('div');
+  lightbox.className = 'lightbox';
+  lightbox.innerHTML = '<span class="lightbox-close">&times;</span><img class="lightbox-img" src="">';
+
+  document.body.appendChild(lightbox);
+
+  galleryItems.forEach(item => {
+    item.addEventListener('click', () => {
+      const img = item.querySelector('img');
+      lightbox.querySelector('.lightbox-img').src = img.src;
+      lightbox.classList.add('active');
+    });
+  });
+
+  lightbox.querySelector('.lightbox-close').addEventListener('click', () => {
+    lightbox.classList.remove('active');
+  });
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      lightbox.classList.remove('active');
+    }
+  });
+}
+
+// Call on page load
+document.addEventListener('DOMContentLoaded', initGalleryLightbox);
+*/

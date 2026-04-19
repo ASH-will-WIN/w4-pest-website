@@ -1,0 +1,77 @@
+/* ========================================
+   WARM THEME
+   Reds, oranges, browns - Perfect for restaurants
+   ======================================== */
+
+:root {
+  /* Primary Colors */
+  --primary-color: #C25E00;        /* Warm orange */
+  --secondary-color: #8B4513;      /* Saddle brown */
+  --accent-color: #D4AF37;         /* Gold */
+
+  /* Text Colors */
+  --text-dark: #2C1810;            /* Dark brown */
+  --text-light: #FFF8F0;           /* Cream */
+
+  /* Background Colors */
+  --bg-light: #FAF3E0;             /* Warm cream */
+  --bg-dark: #1A120B;              /* Dark brown */
+
+  /* Gradient backgrounds */
+  --gradient-primary: linear-gradient(135deg, #C25E00 0%, #8B4513 100%);
+  --gradient-accent: linear-gradient(135deg, #D4AF37 0%, #F4A460 100%);
+  --gradient-hero: linear-gradient(135deg, rgba(44, 24, 16, 0.9) 0%, rgba(212, 175, 55, 0.7) 100%);
+}
+
+/* Theme-specific styling */
+.hero {
+  background: var(--gradient-hero);
+}
+
+.btn-primary {
+  background: var(--gradient-primary);
+  border: 2px solid var(--primary-color);
+}
+
+.btn-primary:hover {
+  background: var(--gradient-accent);
+  border-color: var(--accent-color);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
+}
+
+.section-title {
+  color: var(--secondary-color);
+}
+
+.section-icon {
+  color: var(--accent-color);
+}
+
+.service-card,
+.pricing-card,
+.menu-item {
+  border: 1px solid rgba(194, 94, 0, 0.1);
+}
+
+.service-card:hover,
+.pricing-card:hover,
+.menu-item:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 15px 40px rgba(194, 94, 0, 0.15);
+}
+
+.quote-icon {
+  color: var(--accent-color);
+}
+
+.premium-badge,
+.popular-badge {
+  background: var(--gradient-accent);
+  color: var(--text-dark);
+}
+
+footer {
+  background: var(--bg-dark);
+  color: var(--text-light);
+}
