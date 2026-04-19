@@ -30,8 +30,8 @@ function initPreloader() {
       // Remove from DOM after transition
       setTimeout(() => {
         preloader.remove();
-      }, 500);
-    }, 800);
+      }, 800);
+    }, 2500);
   });
 }
 
