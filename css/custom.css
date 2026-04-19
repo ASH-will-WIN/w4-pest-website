@@ -1128,18 +1128,28 @@
         background: linear-gradient(180deg, transparent, rgba(255,255,255,0.2), transparent);
     }
 
-    /* Float Shapes - Hide on Mobile */
-    .floating-shapes {
-        display: none;
+    /* Float Shapes - Visible on iPad-sized screens */
+    @media (min-width: 480px) {
+        .floating-shapes {
+            display: block !important;
+            opacity: 1 !important;
+        }
+
+        .shape {
+            opacity: 0.12 !important;
+            font-size: 2rem !important;
+        }
     }
 
-    /* Video Background - Better Overlay */
-    .hero-bg-video video {
-        opacity: 0.1;
+    /* Video Background - More visible on tablet */
+    @media (min-width: 480px) {
+        .hero-bg-video video {
+            opacity: 0.18 !important;
+        }
     }
 
     .hero-gradient-overlay {
-        background: linear-gradient(180deg, rgba(15, 37, 66, 0.92) 0%, rgba(26, 54, 93, 0.85) 100%);
+        background: linear-gradient(180deg, rgba(15, 37, 66, 0.88) 0%, rgba(26, 54, 93, 0.82) 100%);
     }
 
     /* Wave Top Mobile */
@@ -1494,20 +1504,41 @@
     }
 }
 
-/* Tablet Optimization */
-@media (min-width: 769px) and (max-width: 1024px) {
+/* ===============================================
+   TABLET / iPAD OPTIMIZATION - ENHANCED ANIMATIONS
+   =============================================== */
+@media (min-width: 769px) {
+    /* Restore animations for tablet - enhanced iPad experience */
+    .floating-shapes {
+        opacity: 1 !important;
+        display: block !important;
+    }
+
+    .shape {
+        opacity: 0.18 !important;
+        font-size: 2.5rem !important;
+    }
+
+    .hero-bg-video video {
+        opacity: 0.25 !important;
+    }
+
     .hero-premium-title {
-        font-size: clamp(2rem, 5vw, 3.5rem);
+        font-size: clamp(2.5rem, 5vw, 4rem);
     }
 
     .hero-trust-badges {
         grid-template-columns: repeat(4, 1fr);
-        gap: 1rem;
+        gap: 1.25rem;
+    }
+
+    .hero-stats-bar {
+        margin: 0 auto 2rem;
     }
 
     .about-stats {
         grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
+        gap: 1.5rem;
     }
 
     .services-grid {
@@ -1516,6 +1547,65 @@
 
     .testimonials-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Enhanced animations for tablet */
+    .reveal-up,
+    .reveal-scale,
+    .reveal-left,
+    .reveal-right {
+        transition: opacity 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+                    transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .service-card,
+    .testimonial-card {
+        transform: translateY(0);
+        transition: all 0.4s ease;
+    }
+
+    .service-card:hover,
+    .testimonial-card:hover {
+        transform: translateY(-8px) scale(1.02);
+    }
+}
+
+/* iPad Landscape - Full animations */
+@media (min-width: 1024px) {
+    .hero-premium {
+        min-height: 100vh;
+    }
+
+    .hero-trust-badges {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .stats-container {
+        flex-direction: row !important;
+    }
+
+    .stat-divider {
+        width: 1px;
+        height: 50px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .testimonials-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Full animations */
+    .service-card:hover {
+        transform: translateY(-10px) scale(1.03);
+        box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+    }
+
+    .btn-primary-glow:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 50px rgba(56, 189, 248, 0.5);
     }
 }
 
